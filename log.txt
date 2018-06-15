@@ -1,0 +1,42 @@
+<keras.engine.topology.InputLayer object at 0x7f7647edd8d0> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647eddb50> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647edda90> False
+<keras.layers.pooling.MaxPooling2D object at 0x7f7647eddd50> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647e7fc10> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647e957d0> False
+<keras.layers.pooling.MaxPooling2D object at 0x7f7647eb2690> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647e42610> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647e4c810> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647e5f6d0> False
+<keras.layers.pooling.MaxPooling2D object at 0x7f7647e6e490> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647bc6f90> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647bd0710> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647be45d0> False
+<keras.layers.pooling.MaxPooling2D object at 0x7f7647bef390> False
+<keras.layers.convolutional.Conv2D object at 0x7f7647b86f10> True
+<keras.layers.convolutional.Conv2D object at 0x7f7647b8f610> True
+<keras.layers.convolutional.Conv2D object at 0x7f7647ba24d0> True
+<keras.layers.pooling.MaxPooling2D object at 0x7f7647bad290> True
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+vgg16 (Model)                (None, 7, 7, 512)         14714688  
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 25088)             0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              25691136  
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 2)                 2050      
+=================================================================
+Total params: 40,407,874
+Trainable params: 32,772,610
+Non-trainable params: 7,635,264
+_________________________________________________________________
+Found 86855 images belonging to 2 classes.
+Found 671 images belonging to 2 classes.
+Epoch 1/20
+
+   1/2895 [..............................] - ETA: 8:07:08 - loss: 0.7560 - acc: 0.6333
+   2/2895 [..............................] - ETA: 7:51:02 - loss: 3.1834 - acc: 0.5500
