@@ -1,5 +1,5 @@
 /test
 /train
-.test.tar
-.train.tar
+*.tar
+*.tar
 .readme
