@@ -3,3 +3,5 @@
 *.tar
 *.tar
 readme
+ev_safty_check_20epochs_drop50.h5
+ev_safty_check_20epochs_drop25.h5
