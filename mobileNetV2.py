@@ -21,7 +21,7 @@ image_size = 224
 
 train_dir = '/home/advrobot/keras_Fine_Tuning_VGG16/train'
 validation_dir = '/home/advrobot/keras_Fine_Tuning_VGG16/test'
-save_model_name = 'mobileNet_ex1.h5'
+save_model_name = 'mobileNetV2.h5'
 
 #model = MobileNetV2(weights='imagenet', include_top=False, input_shape=(image_size, image_size, 3))
 model = MobileNetV2(weights='imagenet',include_top=True ,input_shape=(image_size, image_size, 3))
