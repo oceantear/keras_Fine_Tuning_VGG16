@@ -4,14 +4,18 @@ import sys
 import argparse
 import pandas as pd
 import keras
+import matplotlib.pyplot as plt
 from keras_applications.mobilenet_v2 import MobileNetV2
 from keras_applications.mobilenet import MobileNet
 from keras.optimizers import Adam
-from keras.preprocessing.image import ImageDataGenerator
+from keras.preprocessing.image import ImageDataGenerator, load_img
 from keras.callbacks import EarlyStopping
 from keras.layers import Conv2D, Reshape, Activation
 from keras.models import Model
 from keras.layers import Input, Dense, GlobalAveragePooling2D
+from keras import optimizers
+from datetime import datetime
+import numpy as np
 
 image_size = 224
 
