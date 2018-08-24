@@ -1,0 +1,352 @@
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 224, 224, 3)       0         
+_________________________________________________________________
+conv1_pad (ZeroPadding2D)    (None, 226, 226, 3)       0         
+_________________________________________________________________
+conv1 (Conv2D)               (None, 112, 112, 32)      864       
+_________________________________________________________________
+conv1_bn (BatchNormalization (None, 112, 112, 32)      128       
+_________________________________________________________________
+conv1_relu (Activation)      (None, 112, 112, 32)      0         
+_________________________________________________________________
+conv_pad_1 (ZeroPadding2D)   (None, 114, 114, 32)      0         
+_________________________________________________________________
+conv_dw_1 (DepthwiseConv2D)  (None, 112, 112, 32)      288       
+_________________________________________________________________
+conv_dw_1_bn (BatchNormaliza (None, 112, 112, 32)      128       
+_________________________________________________________________
+conv_dw_1_relu (Activation)  (None, 112, 112, 32)      0         
+_________________________________________________________________
+conv_pw_1 (Conv2D)           (None, 112, 112, 64)      2048      
+_________________________________________________________________
+conv_pw_1_bn (BatchNormaliza (None, 112, 112, 64)      256       
+_________________________________________________________________
+conv_pw_1_relu (Activation)  (None, 112, 112, 64)      0         
+_________________________________________________________________
+conv_pad_2 (ZeroPadding2D)   (None, 114, 114, 64)      0         
+_________________________________________________________________
+conv_dw_2 (DepthwiseConv2D)  (None, 56, 56, 64)        576       
+_________________________________________________________________
+conv_dw_2_bn (BatchNormaliza (None, 56, 56, 64)        256       
+_________________________________________________________________
+conv_dw_2_relu (Activation)  (None, 56, 56, 64)        0         
+_________________________________________________________________
+conv_pw_2 (Conv2D)           (None, 56, 56, 128)       8192      
+_________________________________________________________________
+conv_pw_2_bn (BatchNormaliza (None, 56, 56, 128)       512       
+_________________________________________________________________
+conv_pw_2_relu (Activation)  (None, 56, 56, 128)       0         
+_________________________________________________________________
+conv_pad_3 (ZeroPadding2D)   (None, 58, 58, 128)       0         
+_________________________________________________________________
+conv_dw_3 (DepthwiseConv2D)  (None, 56, 56, 128)       1152      
+_________________________________________________________________
+conv_dw_3_bn (BatchNormaliza (None, 56, 56, 128)       512       
+_________________________________________________________________
+conv_dw_3_relu (Activation)  (None, 56, 56, 128)       0         
+_________________________________________________________________
+conv_pw_3 (Conv2D)           (None, 56, 56, 128)       16384     
+_________________________________________________________________
+conv_pw_3_bn (BatchNormaliza (None, 56, 56, 128)       512       
+_________________________________________________________________
+conv_pw_3_relu (Activation)  (None, 56, 56, 128)       0         
+_________________________________________________________________
+conv_pad_4 (ZeroPadding2D)   (None, 58, 58, 128)       0         
+_________________________________________________________________
+conv_dw_4 (DepthwiseConv2D)  (None, 28, 28, 128)       1152      
+_________________________________________________________________
+conv_dw_4_bn (BatchNormaliza (None, 28, 28, 128)       512       
+_________________________________________________________________
+conv_dw_4_relu (Activation)  (None, 28, 28, 128)       0         
+_________________________________________________________________
+conv_pw_4 (Conv2D)           (None, 28, 28, 256)       32768     
+_________________________________________________________________
+conv_pw_4_bn (BatchNormaliza (None, 28, 28, 256)       1024      
+_________________________________________________________________
+conv_pw_4_relu (Activation)  (None, 28, 28, 256)       0         
+_________________________________________________________________
+conv_pad_5 (ZeroPadding2D)   (None, 30, 30, 256)       0         
+_________________________________________________________________
+conv_dw_5 (DepthwiseConv2D)  (None, 28, 28, 256)       2304      
+_________________________________________________________________
+conv_dw_5_bn (BatchNormaliza (None, 28, 28, 256)       1024      
+_________________________________________________________________
+conv_dw_5_relu (Activation)  (None, 28, 28, 256)       0         
+_________________________________________________________________
+conv_pw_5 (Conv2D)           (None, 28, 28, 256)       65536     
+_________________________________________________________________
+conv_pw_5_bn (BatchNormaliza (None, 28, 28, 256)       1024      
+_________________________________________________________________
+conv_pw_5_relu (Activation)  (None, 28, 28, 256)       0         
+_________________________________________________________________
+conv_pad_6 (ZeroPadding2D)   (None, 30, 30, 256)       0         
+_________________________________________________________________
+conv_dw_6 (DepthwiseConv2D)  (None, 14, 14, 256)       2304      
+_________________________________________________________________
+conv_dw_6_bn (BatchNormaliza (None, 14, 14, 256)       1024      
+_________________________________________________________________
+conv_dw_6_relu (Activation)  (None, 14, 14, 256)       0         
+_________________________________________________________________
+conv_pw_6 (Conv2D)           (None, 14, 14, 512)       131072    
+_________________________________________________________________
+conv_pw_6_bn (BatchNormaliza (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_pw_6_relu (Activation)  (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pad_7 (ZeroPadding2D)   (None, 16, 16, 512)       0         
+_________________________________________________________________
+conv_dw_7 (DepthwiseConv2D)  (None, 14, 14, 512)       4608      
+_________________________________________________________________
+conv_dw_7_bn (BatchNormaliza (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_dw_7_relu (Activation)  (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pw_7 (Conv2D)           (None, 14, 14, 512)       262144    
+_________________________________________________________________
+conv_pw_7_bn (BatchNormaliza (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_pw_7_relu (Activation)  (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pad_8 (ZeroPadding2D)   (None, 16, 16, 512)       0         
+_________________________________________________________________
+conv_dw_8 (DepthwiseConv2D)  (None, 14, 14, 512)       4608      
+_________________________________________________________________
+conv_dw_8_bn (BatchNormaliza (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_dw_8_relu (Activation)  (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pw_8 (Conv2D)           (None, 14, 14, 512)       262144    
+_________________________________________________________________
+conv_pw_8_bn (BatchNormaliza (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_pw_8_relu (Activation)  (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pad_9 (ZeroPadding2D)   (None, 16, 16, 512)       0         
+_________________________________________________________________
+conv_dw_9 (DepthwiseConv2D)  (None, 14, 14, 512)       4608      
+_________________________________________________________________
+conv_dw_9_bn (BatchNormaliza (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_dw_9_relu (Activation)  (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pw_9 (Conv2D)           (None, 14, 14, 512)       262144    
+_________________________________________________________________
+conv_pw_9_bn (BatchNormaliza (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_pw_9_relu (Activation)  (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pad_10 (ZeroPadding2D)  (None, 16, 16, 512)       0         
+_________________________________________________________________
+conv_dw_10 (DepthwiseConv2D) (None, 14, 14, 512)       4608      
+_________________________________________________________________
+conv_dw_10_bn (BatchNormaliz (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_dw_10_relu (Activation) (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pw_10 (Conv2D)          (None, 14, 14, 512)       262144    
+_________________________________________________________________
+conv_pw_10_bn (BatchNormaliz (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_pw_10_relu (Activation) (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pad_11 (ZeroPadding2D)  (None, 16, 16, 512)       0         
+_________________________________________________________________
+conv_dw_11 (DepthwiseConv2D) (None, 14, 14, 512)       4608      
+_________________________________________________________________
+conv_dw_11_bn (BatchNormaliz (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_dw_11_relu (Activation) (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pw_11 (Conv2D)          (None, 14, 14, 512)       262144    
+_________________________________________________________________
+conv_pw_11_bn (BatchNormaliz (None, 14, 14, 512)       2048      
+_________________________________________________________________
+conv_pw_11_relu (Activation) (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv_pad_12 (ZeroPadding2D)  (None, 16, 16, 512)       0         
+_________________________________________________________________
+conv_dw_12 (DepthwiseConv2D) (None, 7, 7, 512)         4608      
+_________________________________________________________________
+conv_dw_12_bn (BatchNormaliz (None, 7, 7, 512)         2048      
+_________________________________________________________________
+conv_dw_12_relu (Activation) (None, 7, 7, 512)         0         
+_________________________________________________________________
+conv_pw_12 (Conv2D)          (None, 7, 7, 1024)        524288    
+_________________________________________________________________
+conv_pw_12_bn (BatchNormaliz (None, 7, 7, 1024)        4096      
+_________________________________________________________________
+conv_pw_12_relu (Activation) (None, 7, 7, 1024)        0         
+_________________________________________________________________
+conv_pad_13 (ZeroPadding2D)  (None, 9, 9, 1024)        0         
+_________________________________________________________________
+conv_dw_13 (DepthwiseConv2D) (None, 7, 7, 1024)        9216      
+_________________________________________________________________
+conv_dw_13_bn (BatchNormaliz (None, 7, 7, 1024)        4096      
+_________________________________________________________________
+conv_dw_13_relu (Activation) (None, 7, 7, 1024)        0         
+_________________________________________________________________
+conv_pw_13 (Conv2D)          (None, 7, 7, 1024)        1048576   
+_________________________________________________________________
+conv_pw_13_bn (BatchNormaliz (None, 7, 7, 1024)        4096      
+_________________________________________________________________
+conv_pw_13_relu (Activation) (None, 7, 7, 1024)        0         
+_________________________________________________________________
+global_average_pooling2d_1 ( (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dense_2 (Dense)              (None, 4)                 2052      
+=================================================================
+Total params: 3,755,716
+Trainable params: 3,733,828
+Non-trainable params: 21,888
+_________________________________________________________________
+<keras.engine.input_layer.InputLayer object at 0x7fc1482ba750> False
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc1482ba9d0> True
+<keras.layers.convolutional.Conv2D object at 0x7fc1482baa50> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1482baa90> True
+<keras.layers.core.Activation object at 0x7fc1482babd0> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc148260110> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc148260650> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1482387d0> True
+<keras.layers.core.Activation object at 0x7fc14822ee50> True
+<keras.layers.convolutional.Conv2D object at 0x7fc1340d1490> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1340d1890> True
+<keras.layers.core.Activation object at 0x7fc1340b3d10> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc134049150> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc13408ac10> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11c6cd7d0> True
+<keras.layers.core.Activation object at 0x7fc11c69ad50> True
+<keras.layers.convolutional.Conv2D object at 0x7fc11c2c1cd0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11c6a3350> True
+<keras.layers.core.Activation object at 0x7fc11c65d7d0> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc11c148c50> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc11c2f1950> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11c2aa390> True
+<keras.layers.core.Activation object at 0x7fc11c2f18d0> True
+<keras.layers.convolutional.Conv2D object at 0x7fc11c179cd0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11c179950> True
+<keras.layers.core.Activation object at 0x7fc11c1348d0> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc11c082fd0> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc11c082dd0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11c0b8990> True
+<keras.layers.core.Activation object at 0x7fc11c0adf90> True
+<keras.layers.convolutional.Conv2D object at 0x7fc11c00a4d0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11c00a8d0> True
+<keras.layers.core.Activation object at 0x7fc1175c5150> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc117592ed0> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc1175920d0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11754b450> True
+<keras.layers.core.Activation object at 0x7fc1175bdc10> True
+<keras.layers.convolutional.Conv2D object at 0x7fc117416c50> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1174168d0> True
+<keras.layers.core.Activation object at 0x7fc1173ce890> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc11739ef90> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc11739ed90> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc117255950> True
+<keras.layers.core.Activation object at 0x7fc11724afd0> True
+<keras.layers.convolutional.Conv2D object at 0x7fc11722b490> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11722b890> True
+<keras.layers.core.Activation object at 0x7fc1170e3110> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc1170b3e90> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc1170b3090> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11706b250> True
+<keras.layers.core.Activation object at 0x7fc11705fbd0> True
+<keras.layers.convolutional.Conv2D object at 0x7fc116f37c10> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc116f37890> True
+<keras.layers.core.Activation object at 0x7fc116ef3850> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc116ebef50> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc116ebed50> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc116d75910> True
+<keras.layers.core.Activation object at 0x7fc116d69f90> True
+<keras.layers.convolutional.Conv2D object at 0x7fc116ccc450> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc116ccc850> True
+<keras.layers.core.Activation object at 0x7fc116b85090> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc116b52e50> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc116b52050> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc116b0b210> True
+<keras.layers.core.Activation object at 0x7fc116b00b90> True
+<keras.layers.convolutional.Conv2D object at 0x7fc1169dabd0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1169da850> True
+<keras.layers.core.Activation object at 0x7fc116991810> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc116963e10> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc116963810> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1168188d0> True
+<keras.layers.core.Activation object at 0x7fc11680ff50> True
+<keras.layers.convolutional.Conv2D object at 0x7fc1167ecf90> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1167ec0d0> True
+<keras.layers.core.Activation object at 0x7fc116645e90> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc116659510> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc11679cc50> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11662c450> True
+<keras.layers.core.Activation object at 0x7fc116622a50> True
+<keras.layers.convolutional.Conv2D object at 0x7fc1165f9cd0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1165f9710> True
+<keras.layers.core.Activation object at 0x7fc1164b1a50> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc116403c10> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc116403610> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11643bb10> True
+<keras.layers.core.Activation object at 0x7fc116431e10> True
+<keras.layers.convolutional.Conv2D object at 0x7fc116292090> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc11628ad90> True
+<keras.layers.core.Activation object at 0x7fc1162425d0> True
+<keras.layers.convolutional.ZeroPadding2D object at 0x7fc116130850> True
+<keras.layers.convolutional.DepthwiseConv2D object at 0x7fc11611d1d0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1160cb250> True
+<keras.layers.core.Activation object at 0x7fc11611d2d0> True
+<keras.layers.convolutional.Conv2D object at 0x7fc1160a1ed0> True
+<keras.layers.normalization.BatchNormalization object at 0x7fc1160a1910> True
+<keras.layers.core.Activation object at 0x7fc115f5aa90> True
+<keras.layers.pooling.GlobalAveragePooling2D object at 0x7fc115ee2e50> True
+<keras.layers.core.Dense object at 0x7fc114aa5f90> True
+<keras.layers.core.Dense object at 0x7fc114ac55d0> True
+Found 94397 images belonging to 4 classes.
+Found 16625 images belonging to 4 classes.
+train_label2index =  {'car': 0, 'nopeople': 3, 'manypeople': 2, 'fewpeople': 1}
+label2index =  {'car': 0, 'nopeople': 3, 'manypeople': 2, 'fewpeople': 1}
+start training time =  2018-08-08 17:55:49.532481
+Epoch 1/20
+ - 3172s - loss: 0.0082 - acc: 0.9976 - val_loss: 0.0250 - val_acc: 0.9972
+Epoch 2/20
+ - 3152s - loss: 5.2803e-04 - acc: 0.9999 - val_loss: 0.0186 - val_acc: 0.9975
+Epoch 3/20
+ - 3155s - loss: 5.5092e-05 - acc: 1.0000 - val_loss: 0.0279 - val_acc: 0.9977
+Epoch 4/20
+ - 3156s - loss: 2.8780e-04 - acc: 0.9999 - val_loss: 0.0247 - val_acc: 0.9971
+Epoch 5/20
+ - 3155s - loss: 1.2504e-04 - acc: 1.0000 - val_loss: 0.0253 - val_acc: 0.9970
+Epoch 6/20
+ - 3156s - loss: 2.5699e-07 - acc: 1.0000 - val_loss: 0.0050 - val_acc: 0.9990
+Epoch 7/20
+ - 3154s - loss: 4.1957e-06 - acc: 1.0000 - val_loss: 0.0091 - val_acc: 0.9987
+Epoch 8/20
+ - 3152s - loss: 4.5129e-06 - acc: 1.0000 - val_loss: 0.0271 - val_acc: 0.9975
+Epoch 9/20
+ - 3154s - loss: 9.3554e-06 - acc: 1.0000 - val_loss: 0.0065 - val_acc: 0.9988
+Epoch 10/20
+ - 3157s - loss: 1.2209e-07 - acc: 1.0000 - val_loss: 0.0139 - val_acc: 0.9984
+Epoch 11/20
+ - 3158s - loss: 2.3027e-07 - acc: 1.0000 - val_loss: 0.0324 - val_acc: 0.9969
+Epoch 12/20
+ - 3159s - loss: 1.5822e-07 - acc: 1.0000 - val_loss: 0.0250 - val_acc: 0.9978
+Epoch 13/20
+ - 3157s - loss: 1.2077e-07 - acc: 1.0000 - val_loss: 0.0153 - val_acc: 0.9984
+Epoch 14/20
+ - 3154s - loss: 1.2955e-07 - acc: 1.0000 - val_loss: 0.0134 - val_acc: 0.9985
+Epoch 15/20
+ - 3154s - loss: 1.1942e-07 - acc: 1.0000 - val_loss: 0.0138 - val_acc: 0.9984
+Epoch 16/20
+ - 3155s - loss: 1.1924e-07 - acc: 1.0000 - val_loss: 0.0133 - val_acc: 0.9985
+Epoch 17/20
+ - 3156s - loss: 1.1927e-07 - acc: 1.0000 - val_loss: 0.0137 - val_acc: 0.9985
+Epoch 18/20
+ - 3160s - loss: 1.0272e-05 - acc: 1.0000 - val_loss: 0.0123 - val_acc: 0.9985
+Epoch 19/20
+ - 3150s - loss: 1.1944e-07 - acc: 1.0000 - val_loss: 0.0124 - val_acc: 0.9986
+Epoch 20/20
+ - 3151s - loss: 1.2114e-07 - acc: 1.0000 - val_loss: 0.0161 - val_acc: 0.9984
+end training time =  2018-08-09 11:27:52.544077
+Found 16625 images belonging to 4 classes.
+No of errors = 1/16625

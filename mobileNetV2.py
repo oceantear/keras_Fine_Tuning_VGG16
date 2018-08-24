@@ -2,7 +2,7 @@
 import os
 import sys
 import argparse
-import pandas as pd
+#import pandas as pd
 import keras
 import matplotlib.pyplot as plt
 from keras_applications.mobilenet_v2 import MobileNetV2
@@ -24,7 +24,7 @@ validation_dir = '/home/advrobot/keras_Fine_Tuning_VGG16/test'
 save_model_name = 'mobileNetV2.h5'
 
 #model = MobileNetV2(weights='imagenet', include_top=False, input_shape=(image_size, image_size, 3))
-model = MobileNetV2(weights='imagenet',include_top=True ,input_shape=(image_size, image_size, 3))
+model = MobileNetV2(weights='imagenet',include_top=False ,input_shape=(image_size, image_size, 3))
 #model.load_weights("imagenet")
 
 '''
